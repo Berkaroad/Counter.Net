@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCounter", "DCounter\DCounter.csproj", "{AD9F1F87-BF88-426F-8AC4-E8C268A665FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCounter.Examples", "DCounter.Examples\DCounter.Examples.csproj", "{399A6528-32D7-47C6-B9CB-9E788D97D077}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AD9F1F87-BF88-426F-8AC4-E8C268A665FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD9F1F87-BF88-426F-8AC4-E8C268A665FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD9F1F87-BF88-426F-8AC4-E8C268A665FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{399A6528-32D7-47C6-B9CB-9E788D97D077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{399A6528-32D7-47C6-B9CB-9E788D97D077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{399A6528-32D7-47C6-B9CB-9E788D97D077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{399A6528-32D7-47C6-B9CB-9E788D97D077}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

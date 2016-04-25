@@ -1,0 +1,1 @@
+%~dp0NuGet.exe pack %~dp0DCounter.nuspec -OutputDirectory %~dp0packages

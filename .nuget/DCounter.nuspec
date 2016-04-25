@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>DCounter</id>
+    <version>0.1.0</version>
+    <title>Distribute Counter For .NET</title>
+    <authors>Berkaroad&lt;chinaren_bjr@163.com&gt;</authors>
+    <owners>Berkaroad&lt;chinaren_bjr@163.com&gt;</owners>
+    <licenseUrl>https://github.com/Berkaroad/DCounter.Net/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/berkaroad/DCounter.Net</projectUrl>
+    <iconUrl>https://github.com/berkaroad/DCounter.Net/favorit.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Abstract Distribute Counter, you can implement it, store in redis or relative-db. </description>
+    <summary>Abstract Distribute Counter, you can implement it, store in redis or relative-db. </summary>
+    <language>en-US</language>
+    <copyright>Copyright berkaroad 2016</copyright>
+    <tags>DCounter distribute counter</tags>
+    <dependencies>
+      <dependency id="ini-parser" version="2.2.4" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Web" targetFramework="net40" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="DCounter\lib\net40\DCounter.dll"  target="lib\net40\" />
+    <file src="DCounter\lib\net40\DCounter.xml"  target="lib\net40\" />
+    <file src="DCounter\lib\DCounter.ini"  target="lib\" />
+  </files>
+</package>

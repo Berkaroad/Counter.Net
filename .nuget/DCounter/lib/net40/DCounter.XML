@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DCounter</name>
+    </assembly>
+    <members>
+        <member name="T:DCounter.AbstractDCounterService">
+            <summary>
+            Abstract Distribute Counter Service
+            </summary>
+        </member>
+        <member name="M:DCounter.AbstractDCounterService.ConfigureProvider(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Action{DCounter.IDCounterProvider})">
+            <summary>
+            Configure Distribute Counter Provider
+            </summary>
+            <param name="assemblyName"></param>
+            <param name="typeName"></param>
+            <param name="config"></param>
+            <param name="initProvider"></param>
+        </member>
+        <member name="P:DCounter.AbstractDCounterService.ServiceName">
+            <summary>
+            Service Name
+            </summary>
+            <value>The name of the service.</value>
+        </member>
+        <member name="P:DCounter.AbstractDCounterService.Provider">
+            <summary>
+            Distribute Counter Provider
+            </summary>
+        </member>
+        <member name="P:DCounter.DefaultDCounterService.ServiceName">
+            <summary>
+            Service Name
+            </summary>
+            <value>The name of the service.</value>
+        </member>
+        <member name="T:DCounter.IDCounterProvider">
+            <summary>
+            Distribute Counter Provider
+            </summary>
+        </member>
+        <member name="P:DCounter.IDCounterProvider.ProviderName">
+            <summary>
+            Provider Name
+            </summary>
+        </member>
+        <member name="M:DCounter.IDCounterProvider.IncreaseBy(System.String,System.Int64)">
+            <summary>
+            Increase By specific step(absolute value) at specific key
+            </summary>
+            <param name="key">Sync: key1/key2, or key1</param>
+            <param name="step">absolute value</param>
+        </member>
+        <member name="M:DCounter.IDCounterProvider.DecreaseBy(System.String,System.Int64)">
+            <summary>
+            Decrease By specific step(absolute value) at specific key
+            </summary>
+            <param name="key">Sync: key1/key2, or key1</param>
+            <param name="step">absolute value</param>
+        </member>
+        <member name="M:DCounter.IDCounterProvider.Get(System.String)">
+            <summary>
+            Get value at specific key
+            </summary>
+            <param name="key">Sync: key1/key2, or key1</param>
+            <returns></returns>
+        </member>
+        <member name="M:DCounter.IDCounterProvider.Set(System.String,System.Int64)">
+            <summary>
+            Set value at specific key
+            </summary>
+            <param name="key">Sync: key1/key2, or key1</param>
+            <param name="val"></param>
+        </member>
+        <member name="T:DCounter.InMemoryCounterProvider">
+            <summary>
+            Counter in memory, just for test.
+            </summary>
+        </member>
+        <member name="T:DCounter.IDCounterConfig">
+            <summary>
+            Storage Configuration
+            </summary>
+        </member>
+        <member name="M:DCounter.IDCounterConfig.Configure(System.Collections.Generic.Dictionary{System.String,System.String},System.Action{DCounter.IDCounterProvider})">
+            <summary>
+            Configure
+            </summary>
+            <param name="config">key-value config</param>
+            <param name="initFunc"></param>
+        </member>
+        <member name="T:DCounter.IDCounterService">
+            <summary>
+            Stream Storage Service
+            </summary>
+        </member>
+        <member name="P:DCounter.IDCounterService.ServiceName">
+            <summary>
+            Service Name
+            </summary>
+            <value>The name of the service.</value>
+        </member>
+        <member name="P:DCounter.IDCounterService.Provider">
+            <summary>
+            Distribute Counter Provider
+            </summary>
+        </member>
+        <member name="T:DCounter.LoadConfigurationException">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DCounter.LoadConfigurationException.#ctor(System.String,System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="T:DCounter.RuntimeEnvironment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DCounter.RuntimeEnvironment.GetPhysicalApplicationPath">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DCounter.DCounterServiceFactory">
+            <summary>
+            Distribute Counter Service Factory
+            </summary>
+        </member>
+        <member name="M:DCounter.DCounterServiceFactory.Create(System.Action{DCounter.IDCounterProvider})">
+            <summary>
+            Create Distribute Counter Service
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
